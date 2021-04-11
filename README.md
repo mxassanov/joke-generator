@@ -1,3 +1,3 @@
 # joke-Generator
-Link to the site:
-https://mxassanov.github.io/joke-teller/
+Link to the demo:
+https://mxassanov.github.io/joke-generator/
