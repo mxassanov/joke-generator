@@ -1,7 +1,7 @@
 const button = document.getElementById('button')
 const audioElement = document.getElementById('audio')
 
-//обертка для передачи шутки в функцию озвучки
+// Обёртка для передачи шутки в функцию озвучки
 function tellMe(joke) {
   VoiceRSS.speech({
     key: '662f9de8cc084bba9b1a61a1559fb522',
@@ -19,9 +19,9 @@ function toggleButton() {
   button.disabled = !button.disabled
 }
 
-// получаем шутки с помощью API
+// Получаем шутки с помощью API
 function getJokes() {
-  // используем прокси для обхода CORS
+  // Используем прокси для обхода CORS
   const proxy = 'https://cors.bridged.cc/'
   const apiUrl = 'http://rzhunemogu.ru/RandJSON.aspx?CType=14'
 
@@ -37,9 +37,9 @@ function getJokes() {
       let response = xhr.response
       const data = JSON.parse(response)
       const joke = data.content
-      // вызываем обертку
+      // Вызываем обертку
       tellMe(joke)
-      // отключаем кнопку
+      
       toggleButton()
     }
   }
@@ -47,5 +47,5 @@ function getJokes() {
 
 button.addEventListener('click', getJokes)
 
-//включаем кнопку, когла воспроизведение закончится
+// Включаем кнопку, когла воспроизведение закончится
 audioElement.addEventListener('ended', toggleButton)

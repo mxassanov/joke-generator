@@ -1,4 +1,3 @@
-/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
 
 html {
     box-sizing: border-box;
@@ -6,7 +5,7 @@ html {
 
 body {
     margin: 0;
-    background-color: #45badd;
+    background-color: #66bb6a;
 }
 
 .container {
@@ -16,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url("./robot.gif") no-repeat;
+    background: url("./giphy.gif") no-repeat;
     background-size: contain;
     background-position: left center;
 }
@@ -29,7 +28,7 @@ button {
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
     color: white;
-    background: #ff3482;
+    background-color: #ffcc66;
     border: none;
     border-radius: 5px;
     box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.3);
@@ -48,7 +47,7 @@ button:disabled {
     filter: brightness(30%);
 }
 
-/*Для планшетов и устройств с меньшим экраном*/
+/* Для планшетов и смартфонов */
 @media screen and (max-width: 999px) {
     .container {
         background-size: cover;
